@@ -1,6 +1,7 @@
 // import logo from './assets/logo.svg';
 import './style/common.css';
 import './style/App.css';
+import './style/responsive.css';
 import MainBtn from './components/MainBtn';
 import Card1 from './components/Card1';
 import Card2 from './components/Card2';
