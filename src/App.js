@@ -1,4 +1,4 @@
-import logo from './assets/logo.svg';
+// import logo from './assets/logo.svg';
 import './style/common.css';
 import './style/App.css';
 
@@ -11,15 +11,23 @@ function MainBtn() {
 }
 
 function App() {
-  const now = new Date();
-  const formatedDate = now.toLocaleString('LT-lt', { dateStyle: 'full' });
+  // const now = new Date();
+  // const formatedDate = now.toLocaleString('LT-lt', { dateStyle: 'full' });
   return (
     <div className='App container'>
-      <img height='100' src={logo} alt='logotipas' />
-      <h1>Hello react !!!</h1>
-      <h2>Today is {formatedDate}</h2>
-      <MainBtn />
-      <img src='/img/diver.jpg' alt='logo' />
+      <div className='cardsList grid3'>
+        <article className='singleCard'>
+          <img src='/img/newyork.jpg' alt='new york' className='cardImg' />
+          <div className='cardInfo'>
+            <h3 className='cardTitle'>New York</h3>
+            <p className='cardDate'>Fri 27 Nov 2016</p>
+            <p className='text'>
+              Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+            </p>
+            <button className='btn'>Buy tickets</button>
+          </div>
+        </article>
+      </div>
     </div>
   );
 }
