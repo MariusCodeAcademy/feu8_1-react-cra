@@ -1,6 +1,27 @@
-h1 {
-  padding-top: 50px;
+/* headeris */
+
+.logo {
+  background-color: #fff;
+  padding: 10px;
+  font-weight: normal;
 }
+.logo span {
+  font-weight: bold;
+}
+
+/* nav */
+.mainNav {
+  background-color: #333;
+  color: #fff;
+}
+.navLink {
+  padding: 8px 16px;
+  display: inline-block;
+}
+.navLink:hover {
+  background-color: #797575;
+}
+
 body {
   background-color: #333;
 }
@@ -32,4 +53,13 @@ body {
 }
 .btn:hover {
   background-color: #626262;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 900px;
+  }
+  .cardsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
